@@ -2,7 +2,7 @@ import os
 import argparse
 import sys
 
-from PyQt5.QtWidgets import QApplication
+from PyQt6.QtWidgets import QApplication
 
 from salt.editor import Editor
 from salt.interface import ApplicationInterface
@@ -33,4 +33,4 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = ApplicationInterface(app, editor)
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
