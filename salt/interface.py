@@ -170,24 +170,24 @@ class ApplicationInterface(QWidget):
         return panel
 
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key_Escape:
+        if event.key() == Qt.Key.Key_Escape:
             self.app.quit()
-        if event.key() == Qt.Key_A:
+        if event.key() == Qt.Key.Key_A:
             self.prev_image()
-        if event.key() == Qt.Key_D:
+        if event.key() == Qt.Key.Key_D:
             self.next_image()
-        if event.key() == Qt.Key_K:
+        if event.key() == Qt.Key.Key_K:
             self.transparency_down()
-        if event.key() == Qt.Key_L:
+        if event.key() == Qt.Key.Key_L:
             self.transparency_up()
-        if event.key() == Qt.Key_N:
+        if event.key() == Qt.Key.Key_N:
             self.add()
-        if event.key() == Qt.Key_R:
+        if event.key() == Qt.Key.Key_R:
             self.reset()
-        if event.modifiers() == Qt.ControlModifier and event.key() == Qt.Key_S:
+        if event.modifiers() == Qt.KeyboardModifier.ControlModifier and event.key() == Qt.Key.Key_S:
             self.save_all()
-        if event.modifiers() == Qt.ControlModifier and event.key() == Qt.Key_Z:
+        if event.modifiers() == Qt.KeyboardModifier.ControlModifier and event.key() == Qt.Key.Key_Z:
             self.delet()
-        # elif event.key() == Qt.Key_Space:
+        # elif event.key() == Qt.Key.Key_Space:
         #     # Do something if the space bar is pressed
         #     pass
